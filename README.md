@@ -1,1 +1,1 @@
-## This is repo is for C programes.
+## This repo is for C programes.
