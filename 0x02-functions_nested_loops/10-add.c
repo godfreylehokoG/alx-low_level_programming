@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _add - check the code
+ * add - check the code
  * @n1: first number
  * @n2: second number
  *
