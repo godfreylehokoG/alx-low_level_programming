@@ -1,1 +1,1 @@
-## Working with pointers, Strings and Arrays
+## Working with pointers, Strings and Array.
