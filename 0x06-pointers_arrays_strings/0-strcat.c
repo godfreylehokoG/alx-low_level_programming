@@ -16,15 +16,14 @@ char *_strcat(char *dest, char *src)
 	count_src = 0;
 	count_dest = 0;
 	i = 0;
-	while (src[count_src] && dest[count_dest])
-	{
+	while (src[count_src])
 		count_src++;
+	while (dest[count_dest])
 		count_dest++;
-	}
+	count_src--;
 	while (i <= count_src)
 	{
 		dest[count_dest++] = src[i++];
 	}
-	dest[count_dest + 1] = '\0';
 	return (dest);
 }
