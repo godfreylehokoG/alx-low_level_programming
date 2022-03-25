@@ -2,22 +2,19 @@
 
 /**
  * _strncat - copies a string
- * @dest: str to print
- * @src: size of string to print
+ * @dest: dest str
+ * @src: str to add to dest
+ * @n: size of full string
  * Return: void function
  */
 
 char *_strncat(char *dest, char *src, int n)
 {
-	int count_src;
 	int count_dest;
 	int i;
 
-	count_src = 0;
 	count_dest = 0;
 	i = 0;
-	while (src[count_src])
-		count_src++;
 	while (dest[count_dest])
 		count_dest++;
 	while (i < n && src[i] != '\0')
