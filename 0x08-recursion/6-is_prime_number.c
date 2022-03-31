@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * sqtRecursive - function for sqaure root
- * @n1: int to get sqaure root of
- * @n2: int
+ * sqtRecursive - function for sqaure root.
+ * @n1: int to get sqaure root of.
+ * @n2: int.
  * Return: 1 if not sqaure root.
  */
 
@@ -17,9 +17,9 @@ int sqtRecursive(int n1, int n2)
 }
 
 /**
- *_sqrt_recursion - function to get natural square root
- * @n: int 
- * Return: -1 if not a sqaure root
+ *_sqrt_recursion - function to get natural square root.
+ * @n: int.
+ * Return: -1 if not a sqaure root.
  */
 
 int _sqrt_recursion(int n)
@@ -31,7 +31,7 @@ int _sqrt_recursion(int n)
 
 /**
  * is_prime_number - function to find sqaure root.
- * @n: int
+ * @n: int.
  * Return: 1 if prime and 0 if not.
  */
 
