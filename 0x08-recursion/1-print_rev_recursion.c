@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _print_rev_recursion - str to print
+ * _print_rev_recursion - str to print in reverse
  * @s: str to factorize
  * Return: void function
  */
