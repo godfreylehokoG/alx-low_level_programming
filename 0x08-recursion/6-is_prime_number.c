@@ -18,7 +18,7 @@ int sqtRecursive(int n1, int n2)
 
 /**
  *_sqrt_recursion - function to get natural square root
- * @n: int
+ * @n: int 
  * Return: -1 if not a sqaure root
  */
 
@@ -30,9 +30,9 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * is_prime_number - function to find sqaure root
+ * is_prime_number - function to find sqaure root.
  * @n: int
- * Return: 1 if prime if not 0
+ * Return: 1 if prime and 0 if not.
  */
 
 int is_prime_number(int n)
