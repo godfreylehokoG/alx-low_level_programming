@@ -2,7 +2,7 @@
 
 /**
  * sqtRecursive - function for sqaure root.
- * @n1: int to get sqaure root of.
+ * @n1: int.
  * @n2: int.
  * Return: 1 if not sqaure root.
  */
