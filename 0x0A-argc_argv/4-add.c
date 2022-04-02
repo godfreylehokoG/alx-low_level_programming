@@ -17,7 +17,7 @@ int isnumber(char *s)
  * main - check the code
  * @argc: size of argv array
  * @argv: array of arguments
- * Return: Always 0.
+ * Return: 1 if error else 0.
  */
 
 int main(int argc, char **argv)
@@ -31,7 +31,7 @@ int main(int argc, char **argv)
 			if (isnumber(argv[i]) != 1)
 			{
 				printf("Error\n");
-				return (-1);
+				return (1);
 			}
 			sum += atoi(argv[i]);
 		}
