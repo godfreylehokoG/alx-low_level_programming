@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * free_grid - check the code
+ * argstostr - check the code
  * @ac: str to store and print
  * @av: str to store and print
  * Return: Void Function
