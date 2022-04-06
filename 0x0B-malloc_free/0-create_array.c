@@ -2,7 +2,8 @@
 
 /**
  * create_array - check the code
- * @c: size of argv array
+ * @size: size of array
+ * @c: char to store and print
  * Return: Always 0.
  */
 
@@ -11,7 +12,7 @@ char *create_array(unsigned int size, char c)
 	char *alpha;
 	unsigned int i;
 
-	if (size == 0 || c == 0)
+	if (size == 0 || c == '\0')
 		return (NULL);
 	alpha = malloc(sizeof(char) * size);
 	for (i = 0; size > i; i++)
