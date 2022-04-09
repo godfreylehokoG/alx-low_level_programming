@@ -10,13 +10,13 @@
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	char *malloc_char, str1 = ptr;
-	unsigned int i, len = max - min + 1;
+	char *malloc_char, *str1 = ptr;
+	unsigned int i, max = new_size;
 
 	if (ptr == NULL)
 	{
 		malloc_char = malloc(new_size);
-		return (p);
+		return (malloc_char);
 	}
 	else if (new_size == 0)
 	{
