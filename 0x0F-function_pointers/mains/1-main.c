@@ -1,6 +1,5 @@
-#include "../main.h"
 #include <stdio.h>
-#include "function_pointers.h"
+#include "../function_pointers.h"
 
 /**
  * print_elem - prints an integer
