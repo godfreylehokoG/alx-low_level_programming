@@ -3,7 +3,8 @@
 
 /**
  * main - check the code
- *
+ * @arc: size of arguments
+ * @argv: arguments
  * Return: Always 0.
  */
 
@@ -21,7 +22,7 @@ int main(int arc, char **argv)
 		if (f == NULL)
 		{
 			printf("Error\n");
-			exit (99);
+			exit(99);
 		}
 	}
 	else
@@ -31,4 +32,3 @@ int main(int arc, char **argv)
 	}
 	return (0);
 }
- 
