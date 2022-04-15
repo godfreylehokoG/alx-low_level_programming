@@ -2,8 +2,7 @@
 
 /**
  * print_all - Sums all given parameters
- * @separator: separetes ints
- * @n: length of ints
+ * @format: separetes ints
  * Return: sum of given ints.
  */
 
