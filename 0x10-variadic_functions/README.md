@@ -1,1 +1,1 @@
-## working with Variadic Functions
+## Working with Variadic Functions
