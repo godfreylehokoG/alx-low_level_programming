@@ -1,15 +1,15 @@
 #include "lists.h"
 
 /**
- * list_len - list elements of in linked list
- * @head: node to be printed
- * @str: 
+ * add_node - list elements of in linked list
+ * @head: first element of the list
+ * @str: str that will be the new node in the list
  *
- * Return: number of nodes
+ * Return: nodes of str
  */
 
 list_t *add_node(list_t **head, const char *str)
-{	
+{
 	list_t *new_node;
 	unsigned int i = 0;
 
@@ -30,6 +30,6 @@ list_t *add_node(list_t **head, const char *str)
 	new_node->len = i;
 	new_node->next = *head;
 	*head = new_node;
-	`
+
 	return (new_node);
 }
