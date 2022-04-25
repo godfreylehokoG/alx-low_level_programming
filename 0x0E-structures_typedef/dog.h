@@ -6,7 +6,14 @@
 #include <strings.h>
 #include <unistd.h>
 
-struct dog 
+/**
+ * dog - dog data
+ * @name: names of dog
+ * @age: age of dog
+ * @owner: name of dog owner
+ */
+
+struct dog
 {
 	char *name;
 	float age;
