@@ -7,7 +7,7 @@
 #include <unistd.h>
 
 /**
- * dog - dog data
+ * struct dog - dog data
  * @name: names of dog
  * @age: age of dog
  * @owner: name of dog owner
