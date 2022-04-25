@@ -1,9 +1,10 @@
 #include "lists.h"
 
 /**
- * listint_len - prints a list
- * @h: items to be listed
- * Return: number of nodes
+ * add_nodeint - adds node to list
+ * @head: head of node
+ * @n: items to be added
+ * Return: head of node.
  */
 
 listint_t *add_nodeint(listint_t **head, const int n)
