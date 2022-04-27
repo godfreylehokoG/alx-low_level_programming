@@ -1,15 +1,13 @@
 #include "lists.h"
 
 /**
- * insert_nodeint_at_index - frees a list
+ * sum_listint - frees a list
  * @head: list to be freed
- * @idx: indexing
- * @n: n to be index
  *
  * Return: void function
  */
 
-listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
+int insert_nodeint_at_index(listint_t *head)
 {
 	listint_t *current, *new;
 
@@ -18,16 +16,16 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	if (new == NULL)
 		return (NULL);
 	new->n = n;
-	if (idx == 0)
+	if (index == 0)
 	{
 		new->next = current;
 		*head = new;
 		return (*head);
 	}
-	while (idx > 1)
+	while (index > 1)
 	{
 		current = current->next;
-		idx--;
+		index--;
 		if (!current)
 		{
 			free(new);
