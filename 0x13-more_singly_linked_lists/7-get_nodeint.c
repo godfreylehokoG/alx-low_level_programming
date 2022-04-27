@@ -1,8 +1,9 @@
 #include "lists.h"
 
 /**
- * free_listint2 - frees a list
+ * get_nodeint_at_index - frees a list
  * @head: list to be freed
+ * @index:
  *
  * Return: void function
  */
