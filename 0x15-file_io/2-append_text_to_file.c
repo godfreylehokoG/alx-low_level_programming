@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * create_file - reads text file and prints to POSIX
+ * append_text_to_file - reads text file and prints
  * @filename: file to read from
  * @text_content: letters to be read
  * Return: 1 if successful -1 if not..
@@ -20,12 +20,11 @@ int append_text_to_file(const char *filename, char *text_content)
 		if (fd == -1)
 			return (-1);
 
-		if (text_content == NULL)	
+		if (text_content == NULL)
 		{
 			close(fd);
 			return (1);
 		}
-
 
 		while (text_content[len])
 			len++;
