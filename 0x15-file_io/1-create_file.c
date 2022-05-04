@@ -9,21 +9,21 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	int fd, wrt, len;
+	int fd, wrt, len = 0;
 
 	if (filename == NULL)
 		return (-1);
 
-	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
+	fd = open(filename, O_CREAT | O_WRONLY, 777);
 
 	if (fd == -1)
 	{
 		return (-1);
 	}
 
-	if (text_content == NULL)
+	if (text_content != NULL)
 	{
-		while (*(text_content + len) != '\0')
+		while (text_content[len])
 			len++;
 		wrt = write(fd, text_content, len);
 		if (wrt == -1)
@@ -31,6 +31,10 @@ int create_file(const char *filename, char *text_content)
 			write(1, "fails", 5);
 			return (-1);
 		}
+	}
+	else
+	{
+		return (-1);
 	}
 	close(fd);
 	return (1);
