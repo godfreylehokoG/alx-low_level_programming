@@ -1,4 +1,4 @@
-#incude "lists.h"
+#include "lists.h"
 
 /**
  * delete_dnodeint_at_index - deletes a node
@@ -10,31 +10,45 @@
 
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	dlistint_t *current;
-	unsigned int i;
+	dlistint_t *h = *head;
+	dlistint_t *head_backup = *head;
+	unsigned int node = 0;
 
-	if (head == NULL || *head == NULL)
+	if (!h || (!h->next && h->n == 0 && !h->prev))
+	{
+		head = NULL;
 		return (-1);
-	current = *head;
-	if (index == 0)
+	}
+	while (h)
 	{
-		*head = current->next;
-		if (current->next != NULL)
+		if (node == index)
 		{
-			current->next->prev = NULL;
+			if (!h->prev)
+			{
+				if (h->next)
+				{
+					h->next->prev = NULL;
+					*head = h->next;
+				}
+				free(h);
+				return (1);
+			}
+			if (!h->next)
+			{
+				if (h->prev)
+					h->prev->next = NULL;
+				free(h);
+				return (1);
+			}
+			h->next->prev = h->prev;
+			h->prev->next = h->next;
+			free(h);
+			return (1);
 		}
-		free(current);
-		return (1);
+		node++;
+		h = h->next;
 	}
-	for (i = 0; i < index; i++)
-	{
-		if (current->next == NULL)
-			return (-1);
-		current = current->next;
-	}
-	current->prev->next = current->next;
-	if (current->next != NULL)
-		current->next->prev = current->prev;
-	free(current);
-	return (1);
+	*head = head_backup;
+	return (-1);
 }
+
