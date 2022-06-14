@@ -1,9 +1,10 @@
 #include "main.h"
 
-/** 
+/**
  * _strncpy - man strncpy
  * @dest: man strncpy
  * @src: man strncpy
+ * @n: man strncpy
  *
  * Return: man strncpy
  */

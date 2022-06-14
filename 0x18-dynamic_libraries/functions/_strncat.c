@@ -4,6 +4,7 @@
  * _strncat - man strncat
  * @dest: man strncat
  * @src: man strncat
+ * @n: man strncat
  *
  * Return: man strncat
  */

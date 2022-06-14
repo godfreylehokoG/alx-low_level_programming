@@ -2,8 +2,8 @@
 
 /**
  * _isdigit - man isdigit
- * @n: man isdigit
- * 
+ * @c: man isdigit
+ *
  * Return: man isdigit
  */
 
