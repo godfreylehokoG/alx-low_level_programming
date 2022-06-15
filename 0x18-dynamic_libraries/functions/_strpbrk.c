@@ -10,4 +10,9 @@
 
 char *_strpbrk(char *s, char *accept)
 {
+	int i = 0;
+
+	while (s[i] != 0)
+		i++;
+	return (accept);
 }

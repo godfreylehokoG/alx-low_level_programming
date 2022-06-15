@@ -9,4 +9,9 @@
 
 int _islower(int c)
 {
+	int i = 0;
+
+	while (c != 0)
+		i++;
+	return (i);
 }
