@@ -2,7 +2,7 @@
 
 /**
  * _strlen - man strlen
- * @c: man strlen
+ * @s: man strlen
  *
  * Return: man strlen
  */
