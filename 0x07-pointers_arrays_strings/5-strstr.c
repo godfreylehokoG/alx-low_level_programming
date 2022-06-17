@@ -1,6 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 
+#define true 1
+#define false 0
+#define bool int
+
 /**
  * _strstr - locates a substring
  * @haystack: string to be searched
@@ -10,28 +14,45 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	int i, j;
-	int needle_in_haystack = 0;
+	char *start = haystack;
+	char *_needle = needle;
+	bool found =  false;
 
-	for (i = 0; haystack[i] != 0; i++)
+	if (!*_needle)
+		return (haystack);
+
+	while (*haystack)
 	{
-
-		for (j = 0; needle[j] != 0; j++)
+		if (*haystack == *needle)
 		{
-
-			if (haystack[i + j] == needle[j] &&
-					haystack[i + j] != 0 && needle[j] != 0)
+			found = true;
+			start = haystack;
+			while (*_needle)
 			{
-				needle_in_haystack = 1;
-				continue;
-			}
+				if (*haystack != *_needle)
+				{
+					found = false;
+					_needle = needle;
+					break;
+				}
 
-			needle_in_haystack = 0;
+				haystack++;
+				_needle++;
+			}
 		}
 
-		if (needle_in_haystack)
-			return (&haystack[i]);
+		if (found)
+		{
+			break;
+		}
+
+		haystack++;
+	}
+	if (found)
+	{
+		return (start);
 	}
 
-	return (0);
+	return (NULL);
 }
+
