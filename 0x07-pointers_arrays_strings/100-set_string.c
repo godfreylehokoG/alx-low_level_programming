@@ -1,12 +1,11 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * set_string - redirect.
- * @s: double pointer to address
- * @to: the original pointer
+ * set_string - sets the value of a pointer to a char.
+ * @s: pointer to be set to a char
+ * @to: the char
  *
- * Return: chessboard.
+ * Return: 0 upon successful exercution.
  */
 
 void set_string(char **s, char *to)
